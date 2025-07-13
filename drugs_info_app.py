@@ -1,11 +1,11 @@
 import streamlit as st
 import json
 
-# Load data
 @st.cache_data
 def load_data():
-    with open("refined_drug_data.json", "r", encoding="utf-8") as f:
+    with open("clean_drug_data.json", "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 data = load_data()
 
